@@ -1,7 +1,7 @@
 from setuptools import setup
 from setuptools import find_packages
 
-version = "0.5.1"
+version = "0.5.2"
 
 setup(
     name="sphinxalchemy",
@@ -17,7 +17,9 @@ setup(
     ],
     entry_points="""
     [sqlalchemy.dialects]
-    sphinx         = sphinxalchemy.mysqldb:Dialect
-    sphinx.mysqldb = sphinxalchemy.mysqldb:Dialect
-    sphinx.mysqlconnector = sphinxalchemy.mysqlconnector:Dialect
-    """)
+    sphinx                  = sphinxalchemy.mysqldb:Dialect
+    sphinx.mysqldb          = sphinxalchemy.mysqldb:Dialect
+    sphinx.mysqlconnector   = sphinxalchemy.mysqlconnector:Dialect
+    sphinx.pymysql          = sphinxalchemy.pymysql:Dialect
+    """
+)

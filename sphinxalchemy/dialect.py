@@ -244,12 +244,3 @@ class SphinxDialect(default.DefaultDialect):
 
     def _check_unicode_returns(self, connection):
         return True
-
-    def do_rollback(self, connection):
-        pass
-
-    def do_commit(self, connection):
-        pass
-
-    def do_begin(self, connection):
-        pass
